@@ -27,7 +27,7 @@ class ServiceController extends Controller
         return view('admin/service/form');
     }
 
-    public function edit_form($id)
+    public function edit($id)
     {
         $satu = Service::where('id_service', $id)->first();
         $data = [
